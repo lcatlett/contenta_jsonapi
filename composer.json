@@ -37,7 +37,7 @@
         },
         "patches": {
             "drupal/core": {
-                "Allow a profile to be installed from existing config": "https://www.drupal.org/files/issues/2788777-33.patch"
+                "Allow a profile to be installed from existing config": "https://www.drupal.org/files/issues/1356276-360.patch"
             },
             "drupal/remote_stream_wrapper": {
                 "Module installation fails when shipped as part of an install profile": "https://www.drupal.org/files/issues/2886691-2.patch"
