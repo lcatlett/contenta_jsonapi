@@ -12,7 +12,7 @@ use Drupal\Core\Form\FormStateInterface;
  *
  * Allows the profile to alter the site configuration form.
  */
-function contenta_jsonapi_form_install_configure_form_alter(&$form, FormStateInterface $form_state) {
+/*function contenta_jsonapi_form_install_configure_form_alter(&$form, FormStateInterface $form_state) {
   // Add a value as example that one can choose an arbitrary site name.
   $form['site_information']['site_name']['#placeholder'] = t('Contenta JSON API');
 
@@ -30,12 +30,12 @@ function contenta_jsonapi_form_install_configure_form_alter(&$form, FormStateInt
   ];
 
   $form['#submit'][] = 'contenta_jsonapi_install_configure_form_submit';
-}
+}*/
 
 /**
  * Submit handler for install_configure_form().
  */
-function contenta_jsonapi_install_configure_form_submit(&$form, FormStateInterface $form_state) {
+/*function contenta_jsonapi_install_configure_form_submit(&$form, FormStateInterface $form_state) {
   if ($form_state->getValue('include_recipes_magazin')) {
     if (\Drupal::service('module_installer')->install(['recipes_magazin', 'recipes_magazin_contenta'])) {
       drupal_set_message(t('Recipe magazin installed'));
@@ -44,4 +44,4 @@ function contenta_jsonapi_install_configure_form_submit(&$form, FormStateInterfa
       drupal_set_message(t('Unable to install Recipe magazin'), 'error');
     }
   }
-}
+}*/
